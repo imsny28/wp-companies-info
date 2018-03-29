@@ -16,7 +16,20 @@
   define( 'PLUGIN_PATH', plugin_dir_path(__FILE__) );
   # Path from url http://www.xyz.com/wp-content/plugins/wp-companies-info
   define( 'PLUGIN_URL',plugins_url().'/wp-companies-info' );
-
   require_once ( PLUGIN_PATH . 'wp-include/classes/wp-ci-init.php' );
   CI_Init::init();
+  require_once ( PLUGIN_PATH . 'page-template.php' );
+
+  add_action( 'template_include', 'uploadr_redirect' );
+    function uploadr_redirect( $template ) {
+
+        $plugindir = dirname( __FILE__ );
+
+            $template = $plugindir . '/templates/template-add-your-company.php';
+
+
+        return $template;
+
+    }
+
 ?>
