@@ -217,7 +217,7 @@ function industries($industry)
 
 	return $industries[$industry];
 	}
-
+  
 global $wpdb;
 $table    = $wpdb->prefix."companies";
 $company  = $_GET['company'];
