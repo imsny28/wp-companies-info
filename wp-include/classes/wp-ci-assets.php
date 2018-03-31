@@ -15,6 +15,8 @@ class CIAssets
   private  static function add_css_files()
   {
     wp_enqueue_style( 'ci',PLUGIN_URL . '/assets/css/custom.css');
+    wp_enqueue_style( 'ci-bootstrap-min', PLUGIN_URL . '/assets/css/bootstrap.min.css' , array(), null, 'all' );
+    wp_enqueue_style( 'ci-bootstrap-toggle', PLUGIN_URL . '/assets/css/bootstrap-toggle.min.css', array(), null, 'all' );
   }
   # Add js files function
   private static function add_js_files()

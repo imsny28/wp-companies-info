@@ -5,7 +5,8 @@
 get_header(); ?>
 <?php
 global $wpdb;
-$table = $wpdb->prefix."_companies";
+$table = $wpdb->prefix."companies";
+$_result['message']='';
 if($_REQUEST['submit']){
 $table_attr = array(
     $_POST['firstname'],
@@ -79,25 +80,25 @@ else{
           <div class="container">
               <div class="row">
 
-                  <div class="col medium-4 small-12 large-4">
+                  <div class="col-md-4">
                       <label for="first"><b>First Name* :</b></label>
                       <input type="text"  name="firstname" id="firstname" required>
                   </div>
-                  <div class="col medium-4 small-12 large-4">
+                  <div class="col-md-4">
                       <label for="last"><b>Last Name* :</b></label>
                       <input type="text"  name="lastname" id="lastname" required>
                   </div>
-                  <div class="col medium-4 small-12 large-4">
+                  <div class="col-md-4">
                       <label for="title"><b>Title* :</b></label>
                       <input type="text"  name="title" id="title" required>
                   </div>
               </div>
               <div class="row">
-                  <div class="col medium-6 small-12 large-6">
+                  <div class="col-md-6">
                       <label for="compnay_name"><b>Company Name* : </b></label>
                       <input type="text"  name="company_name" id="company_name" required>
                   </div>
-                  <div class="col medium-6 small-12 large-6">
+                  <div class="col-md-6  small-12 large-6">
                       <label for="compnay_name"><b>Industry* : </b></label>
                       <select id="industry" class="ember-view" name="industry">
                        <option value="">Select Industry</option>
@@ -252,18 +253,18 @@ else{
                   </div>
               </div>
               <div class="row">
-                  <div class="col medium-12 small-12 large-12">
+                  <div class="col-sm-12">
                       <label for="company_address"><b>Company Address* :</b></label>
                       <div class="row">
-                        <div class="col medium-12 small-12 large-12">
+                        <div class="col-sm-12">
                             <input type="text" placeholder="Street Address" name="address" id="address" required>
                         </div>
                       </div>
                       <div class="row">
-                          <div class="col medium-4 small-12 large-4">
+                          <div class="col-sm-4">
                               <input type="text" placeholder="City" name="city" id="city" required>
                           </div>
-                          <div class="col medium-4 small-12 large-4">
+                          <div class="col-sm-4">
                               <select id="state" class="state-class" name="state">
                                   <option value="">Select State</option>
                                   <option value="AL">Alabama</option>
@@ -319,37 +320,37 @@ else{
                                   <option value="WY">Wyoming</option>
                                 </select>
                           </div>
-                          <div class="col medium-4 small-12 large-4">
+                          <div class="col-sm-4">
                               <input type="text" placeholder="Zip Code" name="zip_code" id="zip_code" maxlength="6"  required>
                           </div>
                       </div>
                   </div>
               </div>
               <div class="row">
-                  <div class="col medium-6 small-12 large-6">
+                  <div class="col-sm-6">
                       <label for="phone_number"><b>Phone Number* :</b></label>
                       <input type="text"  name="phone_number" id="phone_number" placeholder="987-234-4444" maxlength="12" required>
                   </div>
 
-                  <div class="col medium-6 small-12 large-6">
+                  <div class="col-sm-6 small-12 large-6">
                       <label for="email"><b>Email* :</b></label>
                       <input type="text"  name="email" id="email" required>
                   </div>
               </div>
               <div class="row">
-                  <div class="col medium-12 small-12 large-12">
+                  <div class="col medium-12">
                       <label for="company_website"><b>Company Website* :</b></label>
                       <input type="text"  name="companywebsite" id="companywebsite" required>
                   </div>
               </div>
               <div class="row">
-                  <div class="col medium-12 small-12 large-12">
+                  <div class="col-sm-12 ">
                       <label for="bussinessdescription"><b>Business Description* :</b></label>
                       <textarea rows="4" cols="50" name="bussiness_description" id="bussiness_description" required></textarea>
                   </div>
               </div>
               <div class="row">
-                  <div class="col medium-12 small-12 large-12">
+                  <div class="col-sm-12 ">
                       <span class="financing"><b>Looking for financing?  </b></span>
                       <input type="radio" name="financing" value="1"> Yes
                       <input type="radio" name="financing" value="2"> No
