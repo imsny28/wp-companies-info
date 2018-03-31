@@ -1,0 +1,117 @@
+/*===========Add Company===============*/
+textarea {
+    resize: none;
+}
+.alert button.close {
+    float: right;
+    padding: 0;
+    line-height: 0;
+    height: 0;
+    position: relative;
+    top: 10px;
+    min-height: 0px;
+}
+.alert-success {
+    background-color: #5cd635;
+    color: #ffffff;
+    float: left;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.alert-danger {
+    background-color: #b20000;
+    color: #ffffff;
+    float: left;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+#add_company_button {
+    width: 200px;
+}
+
+.button_row
+{
+  text-align: center;
+}
+div#message {
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+}
+.financing b{
+  color: #000000 !important;
+}
+.error-message {
+    border: 1px solid red !important;
+}
+
+/*------------Impact Companpies Directory ------*/
+
+.single-company a:hover {
+    border-bottom: 2px solid #14A008;
+    color: #14A008;
+}
+
+.single-company a {
+    width: 100%;
+    border-bottom: 2px solid #cccccc;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+#no_company {
+    font-size: 47px;
+    padding: 10px;
+    text-align: center;
+}
+
+.bussiness_description {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.personal_information {
+    padding: 0 10px;
+    border: 3px solid #ccc;
+}
+
+.personal_data {
+    padding: 10px;
+
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+.personal_data h1 {
+    text-transform: uppercase;
+}
+.all-company-industry {
+    width: 190px !important;
+    float: right !important;
+}
+.float-right-company {
+    text-align: right;
+}
+
+@media only screen and (max-width: 548px) {
+.heading_ind h1 {
+	text-align: center;
+}
+.heading_ind select {
+    text-align: center;
+    float: none !important;
+    margin: 0 auto !important;
+}
+.single-company {
+    padding: 10px !important;
+    margin: 0 0 0 10px !important;
+}
+}

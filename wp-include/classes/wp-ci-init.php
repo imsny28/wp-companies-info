@@ -5,14 +5,17 @@
     public static function init(){
       self::addfiles();
       self::activation_hook();
+
+      add_action('wp_enqueue_scripts', array('CIAssets','ci_enqueue_scripts'));
     }
 
     # Adding all the classes
     private static function addfiles(){
-      #self::include_file('wp-ci-assets');
+      self::include_file('wp-ci-assets');
       self::include_file('wp-ci-db-connect');
       self::include_file('wp-ci-builtin');
       self::include_file('wp-ci-template');
+      self::include_file('wp-ci-page-template');
     }
     private static function include_file( $filename = null){
      require_once ( PLUGIN_PATH . 'wp-include/classes/' .$filename. '.php' );
