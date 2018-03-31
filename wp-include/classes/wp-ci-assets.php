@@ -3,7 +3,7 @@ class CIAssets
 {
   public static function ci_enqueue_scripts()
   {
-    if(is_page( 'add-company' ) || is_page( 'impact-directory' )){
+    if(is_page( 'add-your-company' ) || is_page( 'impact-companies-directory' )){
       /* Adding css */
       self::add_css_files();
       /* Adding js */

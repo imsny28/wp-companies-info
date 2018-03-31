@@ -41,7 +41,6 @@
       # Create Page object
       $_p = array();
       $_p['post_title'] = $the_page_title;
-      $_p['post_content'] = "[book]";
       $_p['post_status'] = 'publish';
       $_p['post_type'] = 'page';
       $_p['post_author']  = 1;

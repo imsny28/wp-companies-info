@@ -10,7 +10,7 @@
     # Create Table
     private function create( $table_name ){
       $query = "CREATE TABLE $table_name (
-      `ID`                    int(255)  PRIMARY KEY NOT NULL,
+      `ID`                    int(255) NOT NULL AUTO_INCREMENT,
       `firstname`             varchar(254) NOT NULL,
       `lastname`              varchar(254) NOT NULL,
       `title`                 varchar(254) NOT NULL,
@@ -24,7 +24,7 @@
       `email`                 varchar(254) NOT NULL,
       `companywebsite`        varchar(254) NOT NULL,
       `bussiness_description` text NOT NULL,
-      KEY `ID` (`ID`)
+      PRIMARY KEY (`ID`)
       );";
 
       return $query;

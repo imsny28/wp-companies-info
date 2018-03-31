@@ -31,12 +31,10 @@
     public function wp_activate(){
 
       CI_DB_Connect::install();
-
-      // 'Add Your Company', 'add your company'
-      // 'Impact Companies Directory','impact companies directory'
+      
       # EX:- CI_Template::page('Book', 'book');
-      CI_Template::page('Add  Company', 'add  company');
-      CI_Template::page('Impact  Directory','impact directory');
+      CI_Template::page('Add Your Company', 'add your company');
+      CI_Template::page('Impact Companies Directory','impact companies directory');
 
     }
   }

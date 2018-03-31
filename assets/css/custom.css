@@ -1,117 +1,166 @@
 /*===========Add Company===============*/
+.form-group {
+  float: left;
+  width: 100%;
+  margin-bottom: 25px !important;
+}
 textarea {
-    resize: none;
+  resize: none;
 }
 .alert button.close {
-    float: right;
-    padding: 0;
-    line-height: 0;
-    height: 0;
-    position: relative;
-    top: 10px;
-    min-height: 0px;
+  float: right;
+  padding: 0;
+  line-height: 0;
+  height: 0;
+  position: relative;
+  top: 10px;
+  min-height: 0px;
+}
+#add_company_form select {
+  background: #ff000000;
+  border: none;
+  width: 100%;
+  padding: 0px;
+  height: 37px;
+  font-size: 15px;
+  color: #9a9a9a;
+}
+#add_company_form label {
+  font-size: 15px;
+  color: #777;
+  font-weight: unset !important;
+  font-family: sans-serif;
+}
+.financing {
+  font-size: 15px;
+}
+.financing > b{
+  color: #777;
 }
 .alert-success {
-    background-color: #5cd635;
-    color: #ffffff;
-    float: left;
-    width: 100%;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
+  background-color: #5cd635;
+  color: #ffffff;
+  float: left;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
 }
 .alert-danger {
-    background-color: #b20000;
-    color: #ffffff;
-    float: left;
-    width: 100%;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
+  background-color: #b20000;
+  color: #ffffff;
+  float: left;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
 }
 #add_company_button {
-    width: 200px;
+  width: 200px;
+  background-color: #4caf50;
+  padding: 15px;
+  font-size: 15px;
 }
-
 .button_row
 {
   text-align: center;
 }
 div#message {
-    padding: 10px 0;
-    float: left;
-    width: 100%;
-}
-.financing b{
-  color: #000000 !important;
+  padding: 10px 0;
+  float: left;
+  width: 100%;
 }
 .error-message {
-    border: 1px solid red !important;
+  border-bottom: none;
+  -webkit-box-shadow: inset 0 -2px 0 #e51c23 !important;
+  box-shadow: inset 0 -2px 0 #e51c23 !important;
 }
-
+}
+#message .alert {
+  font-size: 15px;
+}
 /*------------Impact Companpies Directory ------*/
 
 .single-company a:hover {
-    border-bottom: 2px solid #14A008;
-    color: #14A008;
+  border-bottom: 2px solid #14A008;
+  color: #14A008;
+  text-decoration: none !important;
 }
 
 .single-company a {
-    width: 100%;
-    border-bottom: 2px solid #cccccc;
-    float: left;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-    text-transform: capitalize;
+  width: 100%;
+  border-bottom: 2px solid #cccccc;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
 }
 
 #no_company {
-    font-size: 47px;
-    padding: 10px;
-    text-align: center;
+  font-size: 47px;
+  padding: 10px;
+  text-align: center;
 }
 
 .bussiness_description {
-    padding: 10px;
-    border-radius: 5px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .personal_information {
-    padding: 0 10px;
-    border: 3px solid #ccc;
+  padding: 0 10px;
+  border: 3px solid #ccc;
+  color: #777;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 .personal_data {
-    padding: 10px;
-
-    border-radius: 8px;
-    margin-bottom: 10px;
-
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .personal_data h1 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .all-company-industry {
-    width: 190px !important;
-    float: right !important;
+  width: 190px !important;
+  float: right !important;
 }
 .float-right-company {
-    text-align: right;
+  text-align: right;
 }
 
 @media only screen and (max-width: 548px) {
-.heading_ind h1 {
-	text-align: center;
-}
-.heading_ind select {
+  .heading_ind h1 {
+  	text-align: center;
+  }
+  .heading_ind select {
     text-align: center;
     float: none !important;
     margin: 0 auto !important;
-}
-.single-company {
+  }
+  .single-company {
     padding: 10px !important;
     margin: 0 0 0 10px !important;
+  }
 }
+.company-name {
+  color: #555;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: .5em;
+  text-rendering: optimizeSpeed;
+  font-size: 24px;
+  font-weight: 700;
+}
+.user_fullname {
+  font-weight: 700;
+  font-size: 20px;
+}
+.bussiness_description h2 {
+  font-size: 21px;
+  font-weight: 700;
 }
