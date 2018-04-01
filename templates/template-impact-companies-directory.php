@@ -217,7 +217,7 @@ function industries($industry)
 
 	return $industries[$industry];
 	}
-  
+
 global $wpdb;
 $table    = $wpdb->prefix."companies";
 $company  = $_GET['company'];
@@ -246,12 +246,10 @@ $industry = $_GET['industry'];
                 </div>
                 <div class="row">
                   <div class="col-sm-12 col-md-6">
-
                     <?php echo $record->address ?></br>
                     <?php echo $record->city ?><?php if($record->state ){ echo ", ".state($record->state); }  ?>, <?php echo $record->zip_code ?></br>
                     <a href="<?php echo $record->companywebsite ; ?>" target="_blank"><?php echo $record->companywebsite ?></a>
                   </div>
-
                 </div>
     		      </div>
               <div class="bussiness_description">

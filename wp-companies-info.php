@@ -19,11 +19,4 @@
   require_once ( PLUGIN_PATH . 'wp-include/classes/wp-ci-init.php' );
   CI_Init::init();
 
-  add_action('add_meta_boxes', 'wpse196289_default_page_template', 1);
-
-function wpse196289_default_page_template() {
-    global $post;
-             $post->page_template = "template-add-your-company.php";
-
-}
 ?>

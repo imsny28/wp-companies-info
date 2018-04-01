@@ -8,6 +8,17 @@
       if( ! $the_page ) {
         // Insert the post into the database
         $the_page_id = wp_insert_post( self::_page( $the_page_title ) );
+
+        # page slug
+        $page_slug = basename(get_the_permalink($the_page_id));
+
+        if( $page_slug =='add-your-company' ){
+          update_post_meta($the_page_id, "_wp_page_template", "templates/template-add-your-company.php");
+        }
+        if( $page_slug =='impact-companies-directory' ){
+          update_post_meta($the_page_id, "_wp_page_template", "templates/template-impact-companies-directory.php");
+        }
+
       }
       else {
         # the plugin may have been previously active and the page may just be trashed...
@@ -15,6 +26,16 @@
         # make sure the page is not trashed...
         $the_page->post_status = 'publish';
         $the_page_id = wp_update_post( $the_page );
+
+        # page slug
+        $page_slug = basename(get_the_permalink($the_page_id));
+
+        if( $page_slug =='add-your-company' ){
+          update_post_meta($the_page_id, "_wp_page_template", "templates/template-add-your-company.php");
+        }
+        if( $page_slug =='impact-companies-directory' ){
+          update_post_meta($the_page_id, "_wp_page_template", "templates/template-impact-companies-directory.php");
+        }
       }
 
       delete_option( 'wp_ci_page_id' );
