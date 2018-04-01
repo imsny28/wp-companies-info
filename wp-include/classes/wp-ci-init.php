@@ -24,14 +24,14 @@
     # Activation Hook
     private static function activation_hook(){
      //register_activation_hook( WP_CI_BASE_FILE , array( 'CI_DB_Connect', 'install' ));
-     register_activation_hook( WP_CI_BASE_FILE , array( __CLASS__, 'wp_activate' ) );
+     register_activation_hook(WP_CI_BASE_FILE , array( __CLASS__, 'wp_activate'));
     }
 
     # Plugin Activation Process
     public function wp_activate(){
 
       CI_DB_Connect::install();
-      
+
       # EX:- CI_Template::page('Book', 'book');
       CI_Template::page('Add Your Company', 'add your company');
       CI_Template::page('Impact Companies Directory','impact companies directory');
