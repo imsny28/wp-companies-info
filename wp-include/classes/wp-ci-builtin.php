@@ -1,4 +1,3 @@
-
 <?php
 class CI_Builtin
 {
